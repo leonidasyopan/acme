@@ -122,7 +122,7 @@ switch ($action){
       setcookie('firstname', $clientFirstname, strtotime('-1 year'), '/');
       unset($_COOKIE['firstname']);
       // Send them to the admin view
-      header('Location: /accounts');
+      header('Location: /accounts/');
       exit;
    break;
    case 'Logout':

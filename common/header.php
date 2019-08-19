@@ -6,7 +6,7 @@
     <?php 
         if(isset($_SESSION['loggedin'])){
     ?>        
-    <a href="accounts/" title="Admin Page"><?php echo "<span>Welcome ". $_SESSION['clientData']['clientFirstname'] . "</span>"; ?></a>
+    <a href="/accounts/" title="Admin Page"><?php echo "<span>Welcome ". $_SESSION['clientData']['clientFirstname'] . "</span>"; ?></a>
     <?php } ?>
     
     <?php if(isset($cookieFirstname)){
@@ -22,6 +22,6 @@
     <?php 
     if(isset($_SESSION['loggedin'])){
     ?>        
-    <a href="accounts/?action=Logout" title="Log Out">Log Out</a>
+    <a href="/accounts/?action=Logout" title="Log Out">Log Out</a>
     <?php } ?>
 </div>
