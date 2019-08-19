@@ -2,25 +2,25 @@
    header('Location: /');
 }
 if (isset($_SESSION['message'])) {
- $message = $_SESSION['message'];
+$message = $_SESSION['message'];
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Admin Panel | Acme, Inc.</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Admin Panel | Acme, Inc.</title>
 
-  <link rel="stylesheet" type="text/css" href="css/screen.css" media="screen">
+   <link rel="stylesheet" type="text/css" href="../css/screen.css" media="screen">
 </head>
 <body>
    <header>
       <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/header.php'; ?>
 
       <nav>
-        <?php echo $navList; ?>   
+         <?php echo $navList; ?>   
       </nav>
    </header>
 
@@ -28,18 +28,18 @@ if (isset($_SESSION['message'])) {
       <h1><?php echo $_SESSION['clientData']['clientFirstname'] . " " . $_SESSION['clientData']['clientLastname']; ?></h1>
 
       <?php
-        if (isset($message)) {
+         if (isset($message)) {
          echo $message;
-        }
+         }
       ?>
 
       <br>
       <p>You are LOGGED IN.</p>
 
       <ul>
-          <li>First Name: <?php echo $_SESSION['clientData']['clientFirstname']; ?></li>
-          <li>Last Name: <?php echo $_SESSION['clientData']['clientLastname']; ?></li>
-          <li>Email: <?php echo $_SESSION['clientData']['clientEmail']; ?></li>       
+         <li>First Name: <?php echo $_SESSION['clientData']['clientFirstname']; ?></li>
+         <li>Last Name: <?php echo $_SESSION['clientData']['clientLastname']; ?></li>
+         <li>Email: <?php echo $_SESSION['clientData']['clientEmail']; ?></li>       
       </ul>
 
       <p><a href="/accounts/?action=updateAccount" title="Update Account Information">Update Account Information</a></p>

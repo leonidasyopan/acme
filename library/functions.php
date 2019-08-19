@@ -20,7 +20,7 @@ function checkPassword($clientPassword){
 function createNav($categories) { 
    // Build a navigation bar using the $categories array
    $navList = '<ul>';
-   $navList .= "<li><a href='index.php' title='View the Acme home page'>Home</a></li>";
+   $navList .= "<li><a href='https://acme.leonidasyopan.com/' title='View the Acme home page'>Home</a></li>";
    foreach ($categories as $category) {
       $navList .= "<li><a href='/products/?action=category&categoryName=".urlencode($category['categoryName'])."' title='View our $category[categoryName] product line'>$category[categoryName]</a></li>";
    }

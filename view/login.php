@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Login | Acme, Inc.</title>
 
-  <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" media="screen">
 </head>
 <body>
   <header>
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/header.php'; ?>
-     
+    
     <nav>
       <?php echo $navList; ?>   
     </nav>
@@ -46,7 +46,7 @@
     <section id="not-a-member-section">
       <h2>Not a Member?</h2>
       <form method="post" action="/accounts/?action=registration">
-         <input type="submit" value="Create an account" id="createButton">   
+        <input type="submit" value="Create an account" id="createButton">   
       </form>        
     </section>   
     
