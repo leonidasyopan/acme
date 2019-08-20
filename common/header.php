@@ -16,7 +16,7 @@
     <?php 
     if(!isset($_SESSION['loggedin'])){
     ?>        
-    <a href="accounts/?action=login" title="My Account Dashboard"><img src="/images/site/account.gif" alt="My Acoount Icon">
+    <a href="/accounts/?action=login" title="My Account Dashboard"><img src="/images/site/account.gif" alt="My Acoount Icon">
     My Account</a>
     <?php } ?>
     <?php 
