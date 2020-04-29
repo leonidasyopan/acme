@@ -30,6 +30,9 @@ This is a project for Brigham Young University - Idaho. It is important because 
 
 <img src="https://leonidasyopan.com/img/acme-laptop.jpg" alt="Acme Website">
 
+Here you can check the live version of the website:
+<a href="https://acme.leonidasyopan.com/" target="_blank">Acme Website</a>
+
 <!-- LICENSE -->
 ## Licença
 
